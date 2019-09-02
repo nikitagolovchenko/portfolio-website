@@ -1,0 +1,28 @@
+{% set title = "Gulp boilerplate" %}
+{% extends "layouts/main.html" %}
+
+{% block content %}
+<style>
+    .icon {
+        display: inline-block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        fill: brown;
+    }
+
+    .icon.vk:hover {
+        fill: rgb(24, 33, 155);
+    }
+
+    .icon.twitter:hover {
+        fill: rgb(31, 170, 235);
+    }
+</style>
+
+<main class="main">
+    <p>Content</p>
+    <svg class="icon vk"><use xlink:href="img/symbol.svg#vk"></use></svg>
+    <svg class="icon twitter"><use xlink:href="img/symbol.svg#twitter"></use></svg>
+</main>
+{% endblock %}

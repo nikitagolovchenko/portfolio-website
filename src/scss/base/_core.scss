@@ -1,0 +1,28 @@
+html, body {
+    color: $body-color;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    background-color: $body-bg;
+
+    min-width: 320px;
+}
+
+.wrapper {
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+    max-width: rem(1200px);
+    margin: 0 auto;
+    padding: 0 rem(15px);
+}
+
+a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: inherit;
+}
