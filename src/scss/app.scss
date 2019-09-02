@@ -5,20 +5,25 @@
 @import 'helpers/functions';
 
 // vendors
-// @import 'vendors/masonry';
 
 // base
 @import 'base/reset';
+@import 'base/icons';
 @import 'base/core';
 
 // layout
-// @import 'layout/header';
+@import 'layout/header';
+@import 'layout/intro';
+@import 'layout/about';
+@import 'layout/skills';
+@import 'layout/services';
 // @import 'layout/footer';  
-// @import 'layout/forms';  
 
 // components
-// @import 'components/buttons';
-// @import 'components/dropdown';
-// @import 'components/slider';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/button';
+@import 'components/subtitle';
+@import 'components/progress';
 
 // pages

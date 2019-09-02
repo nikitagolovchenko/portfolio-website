@@ -3,7 +3,6 @@ html, body {
     font-family: $body-font-family;
     font-size: $body-font-size;
     font-weight: $body-font-weight;
-    background-color: $body-bg;
 
     min-width: 320px;
 }
@@ -20,9 +19,3 @@ html, body {
     padding: 0 rem(15px);
 }
 
-a {
-    display: inline-block;
-    vertical-align: top;
-    text-decoration: none;
-    color: inherit;
-}

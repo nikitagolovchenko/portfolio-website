@@ -1,0 +1,55 @@
+.services {
+
+    &__bg {
+        background: $gray url(../../img/services/services-bg.jpg) center no-repeat;
+        background-size: cover;
+        position: relative;
+        min-height: rem(400px);
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($secondary-color, 0.6);
+        }
+    }
+      
+
+    &__content {
+        position: relative;
+        z-index: 10;
+        left: 0;
+        top: rem(-220px);
+        background-color: $secondary-color;
+        @extend %box-shadow;
+        padding: rem(100px) rem(15px);
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__item {
+        width: 33.33333%;
+        text-align: center;
+        padding: 0 rem(25px);
+        margin-bottom: rem(15px);
+    }
+
+    &__title {
+        font-size: rem(24px);
+        font-weight: $bold;
+        margin: rem(5px) 0;
+    }
+
+    &__icon {
+        font-size: rem(45px);
+    }
+
+    &__text {
+        line-height: 1.625;
+    }
+}

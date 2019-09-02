@@ -1,0 +1,15 @@
+.about {
+    padding: rem(115px) 0;
+    text-align: center;
+    max-width: rem(560px);
+    margin: 0 auto;
+    line-height: 1.625;
+
+    &__text {
+        margin-bottom: rem(30px);
+
+        span {
+            font-weight: $bold;
+        }
+    }
+}

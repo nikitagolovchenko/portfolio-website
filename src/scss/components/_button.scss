@@ -1,0 +1,32 @@
+.button {
+    display: inline-block;
+    vertical-align: top;
+    padding: rem(17px) rem(38px);
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: $medium;
+    border: 1px solid $button-border;
+    background-color: $button-bg;
+    color: $white;
+    @extend %box-shadow;
+    cursor: pointer;
+    transition: color 0.3s linear, background-color 0.3s linear;
+
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $button-color;
+    }
+
+    &--white {
+        color: $button-color;
+        background-color: $white;
+        transition: color 0.3s linear, background-color 0.3s linear;
+
+        &:hover,
+        &:focus {
+            background-color: $button-bg;
+            color: $white;
+        }
+    }
+}

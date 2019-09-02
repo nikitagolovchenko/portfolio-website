@@ -88,6 +88,7 @@ object,
 embed {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /*******************
@@ -112,4 +113,14 @@ noscript {
   display: block;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+/*******************
+   a
+   *******************/
+a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: inherit;
 }

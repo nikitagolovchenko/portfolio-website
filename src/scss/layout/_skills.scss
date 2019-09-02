@@ -1,0 +1,15 @@
+.skills {
+    margin-bottom: rem(70px);
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 rem(-15px);
+    }
+
+    &__progress {
+        width: 33.33333%;
+        padding: 0 rem(15px);
+        margin-bottom: rem(45px);
+    }
+}

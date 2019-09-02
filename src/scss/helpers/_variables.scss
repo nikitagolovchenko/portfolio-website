@@ -1,29 +1,29 @@
 $white:                     #fff;
-$white-f8:                  #f8f8f8; 
-$gray:                      #999;
-$gray-e3e3e3:               #e3e3e3;
-$gray-cfcfcf:               #cfcfcf;
-$gray-f5f5f5:               #f5f5f5;
-$gray-dark:                 #424242;
-$orange:                    #ff9311;
-$primary-color:             $orange;
-$secondary-color:           $gray-dark;
+$black:                     #212121;
+$gray-light:                #e1e1e1;
+$gray-lighten:              #e8e8e8;
+$gray:                      #6a6a6a;
+$blue:                      #0077b5;
+$primary-color:             $black;
+$secondary-color:           $white;
 
 
 $font-size-base:            16px;
 
 
-$merriweather:             'Merriweather', serif;
-$font-family-base:          $merriweather;
+$montserrat:               'Montserrat', sans-serif;
+$cormorant:                'Cormorant', serif;
+$font-family-base:          $cormorant;
 
 
 $light:                     300;
 $regular:                   400;
+$medium:                    500;
 $bold:                      700;
 $font-weight-base:          $regular;
 
 
-$border-radius-base:        2px;
+$border-radius-base:        10px;
 
 
 $screen-sm:                 480px;
@@ -34,70 +34,24 @@ $screen-xl:                 1200px;
 // ==================================================
 
 // --- body ---
-$body-color:                $gray-dark;
+$body-color:                $primary-color;
 $body-font-family:          $font-family-base;
 $body-font-size:            $font-size-base;
 $body-font-weight:          $font-weight-base;
-$body-bg:                   $white-f8;
 
-// --- burger ---
-$burger-bg:                 $primary-color;
-$burger-border-radius:      $border-radius-base;
-$elements-bg:               $white;
+//--- logo ---
+$logo-font-family:          $montserrat;
+
+// --- intro ---
+$intro-bg:                  $gray-light;
+$intro-border:              $gray-lighten;
 
 // --- button ---
+$button-border:             $primary-color;
 $button-bg:                 $primary-color;
-$button-color:              $white;
-$button-border-radius:      $border-radius-base;
-$button-hover-bg:           $gray-dark;
-$button-hover-color:        $primary-color;
+$button-color:              $primary-color;
 
-// --- contacts ---
-$content-bg:                $gray-f5f5f5;
-$cont-title-color:          $gray;  
-$cont-text-color:           $gray-dark;  
-
-// --- footer ---
-$footer-link-color:         $primary-color;
-$footer-link-border:        $primary-color;
-
-// --- header ---
-$h-top-border:              $gray-cfcfcf;
-$h-top-bg:                  $white-f8;
-$h-top-text-color:          $gray-dark;
-$h-top-text-weigth:         $regular;
-$h-top-span-color:          $gray;
-$h-bottom-nav-bg:           $gray-dark;
-$h-bottom-inner-bg:         $primary-color;
-$h-bottom-link-bg:          $gray-e3e3e3;
-
-// --- nav ---
-$nav-link-color:            $white;       
-$nav-link-bg:               $white;       
-$nav-bg-link-color:         $gray;       
-$nav-bg-link-bg:            $primary-color;       
-$nav-bg-link-hover:         $gray-dark;    
-
-// --- sscroll-top ---
-$scroll-bg:                 $primary-color;
-$scroll-hover-color:        $gray-dark;
-$scroll-item-color:         $white;
-
-// --- search ---
-$search-field-bg:           $white-f8;
-$search-field-border:       $gray;
-$search-field-focus:        $primary-color;
-$search-icon-color:         $primary-color;
-
-// --- socials ---
-$socials-border:            $gray-cfcfcf;
-$socials-item-border:       $gray-e3e3e3;
-$socials-link:              $gray;
-$socials-link-hover:        $primary-color;
-
-// --- works ---
-$works-link-color:          $orange;
-$works-link-bg:             $gray-dark;
-
-// --- picture.html ---
-$picture-bg:                $gray-dark;
+// --- progress ---
+$progress-bg:               $gray-light;
+$progress-value:            $primary-color;
+$progress-border-radius:    $border-radius-base;

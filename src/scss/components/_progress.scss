@@ -1,0 +1,25 @@
+.progress {
+    &__name {
+        font-size: rem(23px);
+        text-transform: uppercase;
+        margin-bottom: rem(5px);
+    }
+
+    &__box {
+        height: rem(16px);
+        background-color: $progress-bg;
+        border-radius: $progress-border-radius;
+    }
+
+    &__value {
+        width: 80%;
+        height: 100%;
+        background-color: $progress-value;
+        border-radius: $progress-border-radius;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: rem(15px);
+        color: $white;
+    }
+}

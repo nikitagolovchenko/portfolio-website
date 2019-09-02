@@ -1,0 +1,98 @@
+.intro {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    
+    &__pictures {
+        width: 45%;
+        height: 100%;
+        margin-left: auto;
+        background-color: $intro-bg;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 65%;
+            left: 0;
+            transform: translateY(-65%);
+            width: rem(320px);
+            min-height: rem(490px);
+            border: rem(17px) solid $intro-border;
+            border-left: none;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 65%;
+            right: 0;
+            transform: translateY(-65%);
+            width: rem(220px);
+            min-height: rem(375px);
+            border: rem(13px) solid $white;
+            border-right: none;
+        }
+    }
+
+    &__inner {
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        padding: 0 rem(15px);
+    }
+
+    &__photo {
+        max-height: rem(600px);
+        width: auto;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        @include center(false, true);
+    }
+
+    &__title {
+        font-size: rem(46px);
+        font-weight: $bold;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: rem(22px);
+        margin-bottom: rem(30px);
+    }
+
+    &__button {
+        margin-right: rem(20px);
+    }
+
+    &__scroll-down {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: rem(25px);
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        padding: 0;
+        padding: rem(10px);
+        font-size: rem(24px); 
+        cursor: pointer;
+        transition: background-color 0.3s linear, color 0.3s linear;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+    
+    &__icon {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
