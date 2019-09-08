@@ -1,6 +1,6 @@
 module.exports = function(gulp, $, config) {
   const files = [
-    `${config.src.fonts}/*.{woff,woff2}`,
+    `${config.src.fonts}/**/*`,
     `${config.src.img}/**/*.{jpg,png,jpeg,svg,gif,ico,webp}`,
     `${config.src.media}/**/*.{mp4,mp3}`
   ];

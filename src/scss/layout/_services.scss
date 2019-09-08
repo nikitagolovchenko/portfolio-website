@@ -1,4 +1,6 @@
 .services {
+    position: relative;
+    margin-bottom: rem(450px);
 
     &__bg {
         background: $gray url(../../img/services/services-bg.jpg) center no-repeat;
@@ -18,14 +20,18 @@
     }
       
 
-    &__content {
-        position: relative;
+    &__wrap {
+        position: absolute;
         z-index: 10;
         left: 0;
-        top: rem(-220px);
+        top: 50%;
+        width: 100%;
+    }
+    
+    &__content {
         background-color: $secondary-color;
-        @extend %box-shadow;
         padding: rem(100px) rem(15px);
+        @extend %box-shadow;
     }
 
     &__inner {

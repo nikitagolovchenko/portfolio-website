@@ -1,0 +1,16 @@
+.socials {
+    display: flex;
+    margin: 0 rem(-7px);
+
+    &__item {
+        margin: 0 rem(7px);
+        border-radius: 50%;
+        color: $secondary-color;
+        font-size: rem(34px);
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: lighten($blue, 15);
+        }
+    }
+}

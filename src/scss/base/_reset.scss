@@ -87,7 +87,7 @@ video,
 object,
 embed {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -119,8 +119,6 @@ noscript {
    a
    *******************/
 a {
-  display: inline-block;
-  vertical-align: top;
   text-decoration: none;
   color: inherit;
 }

@@ -1,5 +1,6 @@
 $white:                     #fff;
 $black:                     #212121;
+$black-dark:                #000;
 $gray-light:                #e1e1e1;
 $gray-lighten:              #e8e8e8;
 $gray:                      #6a6a6a;
@@ -55,3 +56,14 @@ $button-color:              $primary-color;
 $progress-bg:               $gray-light;
 $progress-value:            $primary-color;
 $progress-border-radius:    $border-radius-base;
+
+// --- statistics ---
+$statistics-bg:             $black-dark;
+$statistics-color:          $secondary-color;
+
+// --- contacts ---
+$contacts-color:            $black-dark;
+
+// --- footer ---
+$footer-bg:                 $primary-color;
+$footer-color:              $secondary-color;

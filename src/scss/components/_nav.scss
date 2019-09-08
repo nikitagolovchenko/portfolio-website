@@ -5,13 +5,12 @@
     }
 
     &__item {
+        display: block;
         margin: 0 rem(15px);
-    }
-
-    &__link {
-        text-transform: uppercase;
-        padding: rem(8px) 0;
         position: relative;
+        
+        text-transform: uppercase;
+        cursor: pointer;
 
         &:after {
             content: "";
@@ -29,5 +28,10 @@
         &.active:after {
             transform: scaleX(1);
         }
+    }
+
+    &__link {
+        display: block;
+        padding: rem(8px) 0;
     }
 }

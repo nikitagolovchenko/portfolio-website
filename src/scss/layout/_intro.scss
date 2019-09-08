@@ -16,7 +16,8 @@
             top: 65%;
             left: 0;
             transform: translateY(-65%);
-            width: rem(320px);
+            max-width: rem(320px);
+            width: 100%;
             min-height: rem(490px);
             border: rem(17px) solid $intro-border;
             border-left: none;
@@ -29,7 +30,8 @@
             top: 65%;
             right: 0;
             transform: translateY(-65%);
-            width: rem(220px);
+            max-width: rem(220px);
+            width: 100%;
             min-height: rem(375px);
             border: rem(13px) solid $white;
             border-right: none;
@@ -77,6 +79,9 @@
         z-index: 10;
         left: 50%;
         bottom: rem(25px);
+        width: rem(50px);
+        height: rem(50px);
+        overflow: hidden;
         border: 1px solid $primary-color;
         border-radius: 50%;
         padding: 0;
@@ -89,10 +94,19 @@
             background-color: $primary-color;
             color: $secondary-color;
         }
-    }
+
+        &:before {
+            @include center(true, true);
+            top: 20%;
+            animation: down 1.2s infinite ;
+
+            @keyframes down {
     
-    &__icon {
-        display: inline-block;
-        vertical-align: top;
+                100% {
+                    top: 80%;
+                    opacity: 0;
+                }
+            }
+        }
     }
 }

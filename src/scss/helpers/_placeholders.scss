@@ -1,3 +1,13 @@
 %box-shadow {
-    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5), 0px 7px 15px 0px rgba(0,0,0,0.3);
+}
+
+%form-item {
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid $contacts-color;
+    
+    &::placeholder {
+        color: inherit;
+    }
 }
