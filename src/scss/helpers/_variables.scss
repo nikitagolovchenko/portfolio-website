@@ -9,7 +9,7 @@ $primary-color:             $black;
 $secondary-color:           $white;
 
 
-$font-size-base:            16px;
+$font-size-base:            14px;
 
 
 $montserrat:               'Montserrat', sans-serif;
@@ -67,3 +67,7 @@ $contacts-color:            $black-dark;
 // --- footer ---
 $footer-bg:                 $primary-color;
 $footer-color:              $secondary-color;
+
+// --- burger ---
+$burger-color:              $primary-color;
+$burger-focus:              $blue;

@@ -4,11 +4,22 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: rem(40px) 0;
+    padding: rem(20px) 0;
+    transition: background-color 0.3s linear;
+
+    @media (min-width: $screen-md) {
+        padding: rem(40px) 0;
+    }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &.background {
+        padding: rem(10px) 0;
+        background-color: $secondary-color;
+        @extend %box-shadow;
     }
 }

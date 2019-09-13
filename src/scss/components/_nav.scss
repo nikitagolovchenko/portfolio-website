@@ -1,27 +1,69 @@
 .nav {
     &__content {
         display: flex;
+        flex-direction: column;
         margin: 0 rem(-15px);
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        text-align: center;
+        transition: left 0.3s linear;
+
+        @media (min-width: $screen-md) {
+            position: static;
+            flex-direction: row;
+        }
     }
 
     &__item {
         display: block;
         margin: 0 rem(15px);
         position: relative;
-        
         text-transform: uppercase;
+        background-color: $secondary-color;
         cursor: pointer;
+        border-top: 1px solid rgba($primary-color, 0.2);
+        border-bottom: 1px solid rgba($primary-color, 0.2);
+        transition: background-color 0.3s linear, color 0.3s linear;
+        
+        @media (min-width: $screen-md) {
+            background-color: transparent;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        &:nth-child(even) {
+            background-color: $gray-light;
+
+            @media (min-width: $screen-md) {
+                background-color: transparent;
+            }
+        }
 
         &:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 2px;
-            width: 100%;
-            background-color: $primary-color;
-            transform: scaleX(0);
-            transition: transform 0.3s linear;
+            @media (min-width: $screen-md) {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: $primary-color;
+                transform: scaleX(0);
+                transition: transform 0.3s linear;
+            }
+        }
+
+        &:hover,
+        &.active {
+            background-color: $gray;
+            color: $secondary-color;
+
+            @media (min-width: $screen-md) {
+                background-color: transparent;
+                color: inherit;
+            }
         }
 
         &:hover:after,
@@ -33,5 +75,11 @@
     &__link {
         display: block;
         padding: rem(8px) 0;
+    }
+
+    &.active {
+        .nav__content {
+            left: 0;
+        }
     }
 }
