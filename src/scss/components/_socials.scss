@@ -3,11 +3,16 @@
     margin: 0 rem(-7px);
 
     &__item {
-        margin: 0 rem(7px);
+        margin: 0 rem(7px) rem(10px);
         border-radius: 50%;
         color: $secondary-color;
-        font-size: rem(34px);
+        font-size: rem(28px);
         transition: color 0.3s linear;
+
+        @media (min-width: $screen-md) {
+            font-size: rem(34px);
+            margin-bottom: 0;
+        }
 
         &:hover {
             color: lighten($blue, 15);

@@ -1,17 +1,33 @@
 .works {
-    margin-bottom: rem(100px);
+    margin-bottom: rem(60px);
+
+    @media (min-width: $screen-sm) {
+        margin-bottom: rem(100px);
+    } 
 
     &__wrap {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 rem(-15px) rem(15px);
+        margin-bottom: rem(15px);
+
+        @media (min-width: $screen-sm) {
+            margin: 0 rem(-10px) rem(15px);
+        } 
     }
 
     &__inner {
-        width: 33.33333%;
+        width: 100%;
         height: rem(280px);
-        padding: 0 rem(15px) rem(15px);
-        
+        padding-bottom: rem(15px);
+
+        @media (min-width: $screen-sm) {
+            padding: 0 rem(10px) rem(15px);
+            width: 50%;
+        }  
+
+        @media (min-width: $screen-md) {
+            width: 33.33333%;
+        }        
     }
     
     &__item {

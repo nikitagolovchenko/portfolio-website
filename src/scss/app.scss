@@ -5,6 +5,7 @@
 @import 'helpers/functions';
 
 // vendors
+@import 'vendors/animate';
 
 // base
 @import 'base/reset';
@@ -19,6 +20,9 @@
 @import 'components/progress';
 @import 'components/socials';
 @import 'components/burger';
+@import 'components/scroll-down';
+@import 'components/scroll-top';
+
 
 // layout
 @import 'layout/header';

@@ -1,13 +1,18 @@
 .subtitle {
-    font-size: rem(36px);
+    font-size: rem(28px);
     text-transform: uppercase;
     text-align: center;
     position: relative;
     padding-bottom: rem(23px);
-    margin-bottom: rem(35px);
+    margin-bottom: rem(15px);
+
+    @media (min-width: $screen-md) {
+        font-size: rem(36px);
+        margin-bottom: rem(35px);
+    }
 
     &:after {
-        content: url(../../img/subtitle/underline.png);
+        content: url(../img/subtitle/underline.png);
         position: absolute;
         left: 50%;
         bottom: 0;

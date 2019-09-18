@@ -53,6 +53,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "typed.js": "^2.0.10",
+    "wow.js": "^1.2.2"
   }
 }

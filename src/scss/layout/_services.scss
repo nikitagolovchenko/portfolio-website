@@ -1,9 +1,13 @@
 .services {
     position: relative;
-    margin-bottom: rem(450px);
+    margin-bottom: rem(400px);
+
+    @media (min-width: $screen-md) {
+        margin-bottom: rem(450px);
+    }
 
     &__bg {
-        background: $gray url(../../img/services/services-bg.jpg) center no-repeat;
+        background: $gray url(../img/services/services-bg.jpg) center no-repeat;
         background-size: cover;
         position: relative;
         min-height: rem(400px);
@@ -24,25 +28,47 @@
         position: absolute;
         z-index: 10;
         left: 0;
-        top: 50%;
+        top: 20%;
         width: 100%;
+
+        @media (min-width: $screen-md) {
+            top: 50%;
+        }
     }
     
     &__content {
         background-color: $secondary-color;
-        padding: rem(100px) rem(15px);
+        padding: rem(30px) rem(10px) rem(5px);
         @extend %box-shadow;
+
+        @media (min-width: $screen-md) {
+            padding: rem(100px) rem(15px);
+        }
     }
 
     &__inner {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: $screen-md) {
+            flex-direction: row;
+        }
     }
 
     &__item {
-        width: 33.33333%;
+        width: 100%;
         text-align: center;
-        padding: 0 rem(25px);
         margin-bottom: rem(15px);
+
+        @media (min-width: $screen-sm) {
+            padding: 0 rem(15px);
+        }
+        
+        @media (min-width: $screen-md) {
+            width: 33.33333%;
+            padding: 0 rem(25px);
+        }
     }
 
     &__title {

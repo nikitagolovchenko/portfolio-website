@@ -1,0 +1,41 @@
+.scroll-down {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: rem(10px);
+    transform: translateX(-50%);
+    width: rem(50px);
+    height: rem(50px);
+    overflow: hidden;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    background-color: rgba($secondary-color, 0.8);
+    padding: 0;
+    padding: rem(10px);
+    font-size: rem(28px); 
+    cursor: pointer;
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    @media (min-width: $screen-md) {
+        bottom: rem(25px);
+        background-color: transparent;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+
+    &:before {
+        @include center(true, true);
+        top: 20%;
+        animation: down 1.2s infinite ;
+
+        @keyframes down {
+            100% {
+                top: 80%;
+                opacity: 0;
+            }
+        }
+    }
+}

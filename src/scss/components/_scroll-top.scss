@@ -1,0 +1,24 @@
+.scroll-top {
+    align-self: flex-end;
+    padding: 0;
+    border: none;
+    font-size: rem(34px);
+    cursor: pointer;
+    transition: color 0.3s linear;
+    transform: rotate(-30deg);
+    animation: rotateArrow 1s ease-in-out infinite alternate;
+
+    @keyframes rotateArrow {
+        100% {
+            transform: rotate(30deg);
+        }
+    }
+
+    @media (min-width: $screen-md) {
+        align-self: auto;
+    }
+
+    &:hover {
+        color: lighten($blue, 15);
+    }
+}

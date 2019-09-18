@@ -5,19 +5,20 @@
 
     &__inner {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        @media (min-width: $screen-md) {
+            flex-direction: row;
+        }
     }
 
-    &__scroll-top {
-        padding: 0;
-        border: none;
-        font-size: rem(34px);
-        cursor: pointer;
-        transition: color 0.3s linear;
+    &__text {
+        margin-bottom: rem(10px);
 
-        &:hover {
-            color: lighten($blue, 15);
+        @media (min-width: $screen-md) {
+            margin-bottom: 0;
         }
     }
 }
